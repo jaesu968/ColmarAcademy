@@ -6,20 +6,26 @@ header {
     align-items: center; /* align items vertically in the center */
     padding: 64px; 
 }
-.h1_edit{
-    display: flex-inline; 
-    color: black; 
-    font-size: 32px; 
-}
 
 /* logo is to the left side of the header */
 .logo{
-    padding-left: 24px; 
+    display: flex; 
+    align-items: center; /* align items vertically in the center */
     height: 32px; 
 } 
 /* logo text */ 
 .logo-text{
-    height: 32px; 
+    display: flex; 
+}
+.h1_edit, .h1_edit2{ 
+    margin: 0; 
+    padding: 0;  
+}
+.h1 edit{
+    color: black; 
+}
+.h1_edit2{
+    color: grey; 
 }
 /* nav is to the right side of the header */
 .nav{
