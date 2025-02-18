@@ -2,12 +2,19 @@
 
 /*header will have flex display so we can display contents side by side*/
 header {
-    display: flex; 
+    display: flex;
+    justify-content: space-between; /* align items horizontally with space between */
     align-items: center; /* align items vertically in the center */
-    padding: 64px; 
+    padding: 64px 24px; 
 }
 
 /* logo is to the left side of the header */
+.logo-container{
+    display: flex;
+    align-items: center; /* align items vertically in the center */
+    gap: 4px; /*controls spacing between logo and text */
+}
+
 .logo{
     display: flex; 
     align-items: center; /* align items vertically in the center */
@@ -28,9 +35,22 @@ header {
     color: grey; 
 }
 /* nav is to the right side of the header */
-.nav{
+nav{
+    display: flex; 
+    align-items: center; /* align items vertically in the center */
     justify-content: flex-end; /* align items horizontally to the right */
-    padding-right: 24px;
+}
+nav ul{
+    display: flex; 
+    list-style: none; 
+    gap: 1rem; 
+}
+nav ul li{
+    padding: 0px 16px; 
+}
+nav ul li a{
+    text-decoration: none; 
+    color: black; /* this will also set the link color to black */ 
 }
 /* banner which is a flex container */
 .banner{
