@@ -119,39 +119,104 @@ nav ul li a{
 .information{
     display: flex; 
     flex-direction: row; 
-    align-items: center; /* align items vertically in the center */
+    align-items: stretch; /* make sure all items are the same height */
     background-color: #f2f2f2; 
     padding: 32px 0px;  
     border: 1px solid #e6e6e6;
 }
+
 .information .left-main{
     display: flex; 
     flex-direction: column; 
-    justify-content: center; /* align items horizontally in the center */
     padding: 0px 24px; 
     width: 60%; 
-    border: 1px solid #e6e6e6;
 }
+
+.information .left-main img{
+    width: 100%; 
+    height: auto; 
+}
+
+.information .leftside_text{
+    padding-top: 32px; 
+    padding-bottom: 24px; 
+}
+
 .information .right-main{
     display: flex;
     flex-direction: column; 
-    justify-content: center; /* align items horizontally in the center */
     width: 40%; 
-    border: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    margin-right: 24px; 
+    height: 100%;
 }
+
+.information .right-main > div{
+    flex: 1; 
+    display: flex; 
+}
+
+/* borders for child elements of information section */ 
+.information .orientation, 
+.information .campus{
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* orientation flex container */ 
+
 .information .orientation{
     display: flex; 
     flex-direction: row; 
-    border: 1px solid #e6e6e6;
 }
+
 .information .orientation img{
     height: auto; 
     width: 35%; 
-    padding: 16px 16px; 
+    padding: 0px 16px 16px 16px; /*top, right, bottom, left*/
 }
+
 .information .orientation-text{
     display: flex; 
     flex-direction: column; 
     justify-content: center; /* align items vertically in the center */
     width: 65%; 
+}
+
+/* campus flex container */
+
+.information .campus{
+    display: flex; 
+    flex-direction: row;
+}
+
+.information .campus img{
+    height: auto;
+    width: 35%;
+    padding: 16px 16px;
+}
+
+.information .campus-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* align items vertically in the center */
+    width: 65%;
+}
+
+/* guest-lecture flex container */
+.information .guest-lecture{
+    display: flex; 
+    flex-direction: row;
+}
+
+.information .guest-lecture img{
+    height: auto;
+    width: 35%;
+    padding: 16px 16px;
+}
+
+.information .guest-lecture-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* align items vertically in the center */
+    width: 65%;
 }
