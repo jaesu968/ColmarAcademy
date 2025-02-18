@@ -5,7 +5,8 @@ header {
     display: flex;
     justify-content: space-between; /* align items horizontally with space between */
     align-items: center; /* align items vertically in the center */
-    padding: 64px 24px; 
+    padding: 0 24px;
+    height: 64px; /* set the height of the header */
 }
 
 /* logo is to the left side of the header */
@@ -20,19 +21,25 @@ header {
     align-items: center; /* align items vertically in the center */
     height: 32px; 
 } 
+
 /* logo text */ 
 .logo-text{
     display: flex; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
 }
+
 .h1_edit, .h1_edit2{ 
     margin: 0; 
     padding: 0;  
 }
-.h1 edit{
+
+.h1_edit{
     color: black; 
 }
+
 .h1_edit2{
     color: grey; 
+    font-weight: 100; 
 }
 /* nav is to the right side of the header */
 nav{
@@ -43,7 +50,6 @@ nav{
 nav ul{
     display: flex; 
     list-style: none; 
-    gap: 1rem; 
 }
 nav ul li{
     padding: 0px 16px; 
@@ -63,10 +69,13 @@ nav ul li a{
     width: 60%;
     padding: 32px 24px;  
 }
+/* banner text needs to be it's own flex container */
 .banner-text{
-  color: black;   
+  display: flex;
+  color: black;  
+  flex-direction: column;  
 }
 .banner button{
-    padding: 8px; 
+    padding: 8px 0; 
 }
 
