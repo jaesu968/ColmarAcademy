@@ -1,4 +1,46 @@
-logo{
+/*header, includes logo and nav*/
+
+/*header will have flex display so we can display contents side by side*/
+header {
+    display: flex; 
+    align-items: center; /* align items vertically in the center */
+    padding: 64px; 
+}
+.h1_edit{
+    display: flex-inline; 
+    color: black; 
+    font-size: 32px; 
+}
+
+/* logo is to the left side of the header */
+.logo{
     padding-left: 24px; 
     height: 32px; 
+} 
+/* logo text */ 
+.logo-text{
+    height: 32px; 
 }
+/* nav is to the right side of the header */
+.nav{
+    justify-content: flex-end; /* align items horizontally to the right */
+    padding-right: 24px;
+}
+/* banner which is a flex container */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey; 
+}
+.banner img{
+    width: 60%;
+    padding: 32px 24px;  
+}
+.banner-text{
+  color: black;   
+}
+.banner button{
+    padding: 8px; 
+}
+
