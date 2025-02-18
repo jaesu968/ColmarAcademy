@@ -1,4 +1,14 @@
+body {
+    margin: 0; 
+    padding: 0; 
+}
 /*header, includes logo and nav*/
+/* set consistent max-width for all main sections */ 
+header, .banner {
+    width: 100%; 
+    max-width: 100%; 
+    box-sizing: border-box; 
+}
 
 /*header will have flex display so we can display contents side by side*/
 header {
@@ -64,6 +74,7 @@ nav ul li a{
     justify-content: center;
     align-items: center;
     background-color: grey; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 .banner img{
     width: 60%;
@@ -72,10 +83,21 @@ nav ul li a{
 /* banner text needs to be it's own flex container */
 .banner-text{
   display: flex;
-  color: black;  
   flex-direction: column;  
+  color: black; 
+  width: 80%;  /* this set the width to 1/2 of what is left of the image */
+  padding: 32px 0px; 
 }
-.banner button{
+.banner-text h3{ 
+    font-weight: 300; 
+    width: 80%; /* this sets the width of the h3 relative to its container */
+}
+.banner-text button{
     padding: 8px 0; 
+    width: 80%; /* this sets the button with relative to its container */ 
+    background-color: #4a4a4a; 
+    border: none; 
+    color: white; 
+    cursor: pointer; 
 }
 
