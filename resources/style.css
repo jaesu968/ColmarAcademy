@@ -1,6 +1,7 @@
 body {
     margin: 0; 
     padding: 0; 
+    font-family: "davis-sans", sans-serif; 
 }
 /*header, includes logo and nav*/
 /* set consistent max-width for all main sections */ 
@@ -86,7 +87,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: lightgrey; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-family: "Mondial", sans-serif;
 }
 .banner img{
     width: 60%;
@@ -143,7 +144,7 @@ header {
 /* information is it's own flex container */
 
 /* information mobile is not showing by default */ 
-.informationMobile{
+.information-mobile{
     display: none;
 }
 .information{
@@ -186,6 +187,10 @@ header {
     display: flex; 
 }
 
+.right-main a{
+    text-decoration: none; 
+    color: rgb(56, 56, 255);
+}
 /* borders for child elements of information section */ 
 .information .orientation, 
 .information .campus{
@@ -504,6 +509,11 @@ footer{
 
     .courses{
         background-color: white; 
+        border: 1px solid lightgray; 
+    }
+
+    .courses #coursesHeader{
+        padding: 32px 0 16px 0px; /* top, right, bottom, left */
     }
 
     .courses-container{
@@ -513,11 +523,17 @@ footer{
     /* chagne background color for divs in courses section */ 
     .courses-container > div{
         background-color: lightgray; 
+        padding: 16px 0 24px 16px;/* top, right, bottom, left */
     }
 
     /* no images in mobile view for courses section */ 
     .courses-container > div > img{
         display: none;
+    }
+
+    .courses-container > div > h2 {
+        font-size: 1.17em; /* the default font size of h3 */ 
+        font-weight: bold; 
     }
 
     /* make sure no h3 or p tags show up in mobile view */ 
@@ -527,13 +543,45 @@ footer{
     }
 
     /* thesis section */
+
+    .thesis{
+        padding-top: 32px; 
+        padding-bottom: 16px; 
+        width: 100%; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+    }
     .thesis-container{
+        width: 100%;
+        max-width: 100%; 
         flex-direction: column; 
+        box-sizing: border-box; 
+        padding: 0 0 24px 0; /* top, right, bottom, left */
     }
 
     /* thesis video will show but nothing else */ 
     .thesisVideo{
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .thesis .content-wrapper{
+        display: none; 
+    }
+
+    .thesisSidebar{
+        display: none;  
+    }
+
+    /* footer section */ 
+    footer{
+        width: 100%; 
+        max-width: 100%; 
+        box-sizing: border-box; 
+        padding: 16px 0 16px 24px; /* top, right, bottom, left */
     }
 
     /* footer , left side to show and right side to hide */ 
