@@ -277,3 +277,87 @@ nav ul li a{
     padding: 8px 16px; 
     margin: 0; 
 }
+
+/* thesis section, flex container */
+.thesis{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+} 
+
+.thesis h1{
+    text-align: center; 
+    padding: 32px 0px; 
+}
+
+.thesis-container{
+    display: flex; 
+    width: 100%; 
+}
+
+/* left column - video section */ 
+.thesisVideo{
+    width: 60%; 
+    padding: 0 24px; 
+}
+
+.thesisVideo video{
+    width: 100%; 
+    height: auto; 
+}
+
+.thesisVideo .content-wrapper{
+    display: flex; 
+    flex-direction: column; 
+    padding: 24px 0; 
+}
+
+.thesisVideo h2{
+    margin-top: 24px; 
+}
+
+.thesisVideo p{
+    color: gray; 
+    font-weight: 100; 
+}
+
+/* right column - sidebar */
+.thesisSidebar{
+    width: 40%;
+}
+
+/* Sidebar items */ 
+.thesisSideBar .fisma-content, 
+.thesisSideBar .urban-content{
+    display: flex;
+    flex-direction: column;
+    width: 65%; 
+    padding-left: 16px; 
+}
+
+.fisma, .urban{
+    display: flex; 
+    align-items: center; 
+    padding: 16px; 
+}
+
+.fisma{
+    background-color: lightgray; 
+}
+
+.thesisSidebar img{
+    width: 35%; 
+    height: auto; 
+    padding: 16px; 
+}
+
+.thesisSidebar h2{
+    margin: 0; 
+    padding-bottom: 8px; 
+}
+
+.thesisSidebar p{
+    margin: 0; 
+    color: gray; 
+}
