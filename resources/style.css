@@ -284,6 +284,7 @@ nav ul li a{
     flex-direction: column; 
     width: 100%;
     font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    border-bottom: 1px solid #e6e6e6;
 } 
 
 .thesis h1{
@@ -361,3 +362,27 @@ nav ul li a{
     margin: 0; 
     color: gray; 
 }
+
+/* footer section */ 
+footer{
+    display: flex; 
+    flex-direction: column; 
+    padding: 16px 24px 64px 24px; /* top, right, bottom, left */
+}
+
+.footer-left{
+    float: left; 
+    align-items: center; /* align items vertically in the center */
+}
+
+.footer-right{
+    display: flex; 
+    align-items: center; /* align items vertically in the center */
+    float: right; 
+}
+.footer-right a{
+    text-decoration: none;
+    color: black;
+    padding: 0 8px;
+}
+
